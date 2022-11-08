@@ -1,8 +1,21 @@
-from cb4 import CB4
+import platform
+version = float(platform.python_version()[0:3])
+
+if version > 3.9:
+    print("Importing 3.10 version.")
+    from cb4 import CB4
+else:
+    print("Importing 3.9 and lower version")
+    from cb3_9 import CB4
 from colorama import Back, Cursor
 from platform import system
 from os import system as call
 from time import sleep
+from assembler import main as asmain
+
+compile = input("Do you wan't to compile something? (Y/N): ")
+if compile.lower() == 'y':
+    asmain()
 
 file = input('File name: ')
 while True:

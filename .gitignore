@@ -1,1 +1,6 @@
 __pycache__/*
+replit.nix
+venv/*
+.replit/*
+poetry.lock
+pyproject.toml
