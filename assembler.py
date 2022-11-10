@@ -1,3 +1,9 @@
+# TODO: Fix the assembler to split 8-bit numbers into four bit numbers and fix the emulator to gather them in multiple clock cycles
+
+
+
+
+
 from colorama import Fore
 from cb4 import CB4
 
